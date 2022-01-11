@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+    margin:0;
+    font-family: 'Exo 2', sans-serif;
+    background-image: url(https://picsum.photos/1280/720), linear-gradient(to right , rgba(34, 34, 34, 0.8) 100%, #333 0%);
+    background-size:cover;
+    background-blend-mode: multiply;
+}
+.card{
+    background: rgba(255, 255, 255, 0.3);
+    padding: 3vh;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1vh;
+}
+.search{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+.search button{
+    margin: auto 1vh;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    height: 3em;
+    width: 3em;
+    background-color:rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.search button:hover{
+    background-color:rgba(255, 255, 255, 0.8);
+}
+input.search-bar{
+    border: none;
+    outline: none;
+    padding: 1vh;
+    border-radius: 18px;
+    background-color:rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: calc(100% - 30px);
+    transition: 0.2s ease-in-out;
+}
+input.search-bar:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+}
