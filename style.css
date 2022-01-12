@@ -57,3 +57,22 @@ input.search-bar{
 input.search-bar:hover{
     background-color:rgba(255, 255, 255, 0.5);
 }
+.description{
+    text-transform: capitalize;
+}
+.info {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: space-around;
+}
+h1.temp {
+    margin: 1vh auto;
+}
+.info img {
+    width: 5vh;
+}
+.wheather.loading{
+    visibility: hidden;
+    max-height: 5vh;
+}

@@ -11,16 +11,18 @@
 <body>
     <div class="card">
         <div class="search">
-            <input type="text" class="search-bar" placeholder="Search">
-            <button><i class="fa fa-search" aria-hidden="true"></i></button>
+            <input id="search-bar" type="text" class="search-bar" placeholder="Search">
+            <button id="search-button"><i class="fa fa-search" aria-hidden="true"></i></button>
         </div>
-        <div class="wheather">
-            <h2 class="city">Wheather in Colombo</h2>
-            <h1 class="temp">51&deg;C</h1>
-            <img src="" alt="image icon" class="icon">
-            <div class="description">Sunny</div>
-            <div class="humidity">Humidity: 60%</div>
-            <div class="wind">Wind speed: 6.2km/h</div>
+        <div id="wheather" class="wheather loading">
+            <h2 id="city" class="city">Loading ...</h2>
+            <h1 id="temperature" class="temp">Loading ...&deg;C</h1>
+            <div class="info">
+                <img id="icon" src="https://openweathermap.org/img/wn/02d@2x.png" alt="image icon" class="icon">
+                <div id="description" class="description">Loading ...</div>
+            </div>
+            <div id="humidity" class="humidity">Humidity: Loading ...</div>
+            <div id="wind" class="wind">Wind speed: Loading ...</div>
 
         </div>
     </div>
