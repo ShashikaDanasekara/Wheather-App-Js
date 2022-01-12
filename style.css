@@ -10,9 +10,10 @@ body{
     height: 100vh;
     margin:0;
     font-family: 'Exo 2', sans-serif;
-    background-image: url(https://picsum.photos/1280/720), linear-gradient(to right , rgba(34, 34, 34, 0.8) 100%, #333 0%);
+    background-image: url("https://source.unsplash.com/1280x720?snow"); 
+    background-color: linear-gradient(to right , rgba(34, 34, 34, 0.8) 100%, #333 0%);
     background-size:cover;
-    background-blend-mode: multiply;
+    background-blend-mode:overlay;
 }
 .card{
     background: rgba(255, 255, 255, 0.3);
@@ -21,6 +22,7 @@ body{
     width: 100%;
     max-width: 420px;
     margin: 1vh;
+    box-shadow: 0px 0px 20px 0 black;
 }
 .search{
     display: flex;
@@ -71,6 +73,9 @@ h1.temp {
 }
 .info img {
     width: 5vh;
+}
+.wheather{
+    font-weight: 600;
 }
 .wheather.loading{
     visibility: hidden;

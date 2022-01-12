@@ -49,7 +49,28 @@ document.getElementById("search-button").addEventListener('click',function(){
     console.log(typeof(search));
 
     if (search == "") return;
-    
+
+    let url = "url('https://source.unsplash.com/1280x720?"+search+"')" ;
+    console.log("url is: "+url);
+    document.body.style.backgroundImage = url ;
+
     weather.fetchWeather(search);
     document.getElementById('wheather').classList.remove('loading');  
 })
+
+document.getElementById("search-bar").addEventListener("keypress", (event)=> {
+    if (event.key === "Enter") { 
+        const search = document.getElementById('search-bar').value;
+        console.log(typeof(search));
+    
+        if (search == "") return;
+    
+        let url = "url('https://source.unsplash.com/1280x720?"+search+"')" ;
+        console.log("url is: "+url);
+        document.body.style.backgroundImage = url ;
+
+        weather.fetchWeather(search);
+        document.getElementById('wheather').classList.remove('loading');  
+        
+    }
+  });
